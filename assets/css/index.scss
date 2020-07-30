@@ -69,15 +69,19 @@ body {
 
     .active-contenu{
       animation: fade .5s forwards;
+      z-index: -1;
     }
     
     @keyframes fade {
       from {
         opacity: 0;
+        top: -10%;
       }
 
       to {
         opacity: 1;
+        top: 50%;
+        transform: translateY(-20%);
       }
     }
 

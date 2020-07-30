@@ -70,16 +70,25 @@ body {
       transition: all .3s ease; }
     body .tabs__container .active-contenu {
       -webkit-animation: fade .5s forwards;
-      animation: fade .5s forwards; }
+      animation: fade .5s forwards;
+      z-index: -1; }
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0; }
+    opacity: 0;
+    top: -10%; }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    top: 50%;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%); } }
 
 @keyframes fade {
   from {
-    opacity: 0; }
+    opacity: 0;
+    top: -10%; }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    top: 50%;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%); } }
