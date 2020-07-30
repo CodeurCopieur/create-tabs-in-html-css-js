@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Créer des onglets en HTML, CSS, JS.
+
+    link(rel="stylesheet", href="assets/css/style.css")
+    link(rel="stylesheet", href="assets/css/index.css")
+
+  body
+
+    section.tabs__container
+      ul.tabs__container-onglets
+        li.onglets.active(data-anim="1") Titre 1
+        li.onglets(data-anim="2") Titre 2
+        li.onglets(data-anim="3") Titre 3
+
+      .tabs__container-contenu.active-contenu(data-anim="1")
+        h3 Lorem ipsum dolor sit amet consectetur. 1
+        hr
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus officia repellendus, officiis nihil quos soluta quisquam voluptas atque reprehenderit reiciendis maiores doloremque? Saepe, alias. Optio corrupti alias itaque illo ut.
+
+      .tabs__container-contenu(data-anim="2")
+        h3 Lorem ipsum dolor sit amet consectetur. 2
+        hr
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus officia repellendus, officiis nihil quos soluta quisquam voluptas atque reprehenderit reiciendis maiores doloremque? Saepe, alias. Optio corrupti alias itaque illo ut.
+      
+      .tabs__container-contenu(data-anim="3")
+        h3 Lorem ipsum dolor sit amet consectetur. 3
+        hr
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus officia repellendus, officiis nihil quos soluta quisquam voluptas atque reprehenderit reiciendis maiores doloremque? Saepe, alias. Optio corrupti alias itaque illo ut.
+
+    script(src="assets/js/index.js")
